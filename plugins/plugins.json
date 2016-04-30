@@ -1,0 +1,9 @@
+{
+  "available": {
+    "sum": {
+      "parameters": ["http://www.example.com/firstValue", "http://www.example.com/secondValue"],
+      "return": "http://www.example.com/sumResult",
+      "id": "http://www.example.com/sumFunction"
+    }
+  }
+}

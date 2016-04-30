@@ -1,0 +1,26 @@
+PREFIX ex: <http://www.example.com/>
+PREFIX fn: <http://semweb.mmlab.be/ns/function#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+#should be part of the function description
+ex:sumFunction
+  a fn:Function ;
+  fn:expects
+    [ rdf:predicate ex:firstValue ] ,
+    [ rdf:predicate ex:secondValue ] ;
+  fn:returns
+    [rdf:predicate ex:sumResult ] .
+
+#should be part of the LD enabled system
+ex:exec
+  a fn:Execution ;
+  fn:executes ex:sumFunction ;
+  ex:firstValue "8"^^xsd:integer ;
+  ex:secondValue "4"^^xsd:integer .
+
+  ex:exec2
+    a fn:Execution ;
+    fn:executes ex:sumFunction ;
+    ex:firstValue "8"^^xsd:integer ;
+    ex:secondValue "-2"^^xsd:integer .

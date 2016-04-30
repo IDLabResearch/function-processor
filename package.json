@@ -1,0 +1,28 @@
+{
+  "name": "function-processor",
+  "version": "0.0.0",
+  "description": "Function Processor POC",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "keywords": [
+    "function",
+    "linked",
+    "data"
+  ],
+  "author": "Ben De Meester",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "async": "^1.5.2",
+    "lodash": "^4.11.1",
+    "n3": "^0.4.5"
+  }
+}
