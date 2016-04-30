@@ -1,6 +1,11 @@
 # Function processor POC
 
-## TODO
+Generic processor of Function descriptions, using JavaScript and Node.js (browser-version coming).
 
-* "call": "sum", // only to be used if exports has multiple;
-* also: callback/error thrown, etc.
+## Installation
+
+run `npm install`
+
+## Testing
+
+run `npm run test`
