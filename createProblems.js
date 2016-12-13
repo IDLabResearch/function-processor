@@ -27,10 +27,12 @@ var problems = {
                 description: 'Getting the timezone of a string.',
                 functions: [{
                     parameter: ['string'],
+                    parameterNames: ['Duration String'],
                     return: ['duration']
                 }, {
                     label: 'tz',
                     parameter: ['string'],
+                    parameterNames: ['Timezone String'],
                     return: ['string']
                 }]
             },
@@ -39,6 +41,7 @@ var problems = {
                 description: 'Extracting the day from a date/time literal.',
                 functions: [{
                     parameter: ['dateTime'],
+                    parameterNames: ['DateTime'],
                     return: ['integer']
                 }]
             },
@@ -47,6 +50,7 @@ var problems = {
                 description: 'Extracting the month from a date/time literal.',
                 functions: [{
                     parameter: ['dateTime'],
+                    parameterNames: ['DateTime'],
                     return: ['integer']
                 }]
             },
@@ -55,6 +59,7 @@ var problems = {
                 description: 'Extracting the hours from a date/time literal.',
                 functions: [{
                     parameter: ['dateTime'],
+                    parameterNames: ['DateTime'],
                     return: ['integer']
                 }]
             },
@@ -63,6 +68,7 @@ var problems = {
                 description: 'Extracting the seconds from a date/time literal.',
                 functions: [{
                     parameter: ['dateTime'],
+                    parameterNames: ['DateTime'],
                     return: ['integer']
                 }]
             },
@@ -71,6 +77,7 @@ var problems = {
                 description: 'Extracting the minutes from a date/time literal.',
                 functions: [{
                     parameter: ['dateTime'],
+                    parameterNames: ['DateTime'],
                     return: ['integer']
                 }]
             },
@@ -79,6 +86,7 @@ var problems = {
                 description: 'Extracting the year from a date/time literal.',
                 functions: [{
                     parameter: ['dateTime'],
+                    parameterNames: ['DateTime'],
                     return: ['integer']
                 }]
             },
@@ -98,6 +106,7 @@ var problems = {
                 description: 'Calculating the SHA1 checksum.',
                 functions: [{
                     parameter: ['string'],
+                    parameterNames: ['Input String'],
                     return: ['string']
                 }]
             },
@@ -106,6 +115,7 @@ var problems = {
                 description: 'Calculating the SHA512 checksum.',
                 functions: [{
                     parameter: ['string'],
+                    parameterNames: ['Input String'],
                     return: ['string']
                 }]
             },
@@ -114,6 +124,7 @@ var problems = {
                 description: 'Calculating the SHA384 checksum.',
                 functions: [{
                     parameter: ['string'],
+                    parameterNames: ['Input String'],
                     return: ['string']
                 }]
             },
@@ -122,6 +133,7 @@ var problems = {
                 description: 'Calculating the SHA256 checksum.',
                 functions: [{
                     parameter: ['string'],
+                    parameterNames: ['Input String'],
                     return: ['string']
                 }]
             },
@@ -130,6 +142,7 @@ var problems = {
                 description: 'Calculating the md5 checksum.',
                 functions: [{
                     parameter: ['string'],
+                    parameterNames: ['Input String'],
                     return: ['string']
                 }]
             }
@@ -142,6 +155,7 @@ var problems = {
                 description: 'Returning the largest (closest to positive infinity) number with no fractional part that is not greater than the given value.',
                 functions: [{
                     parameter: ['number'],
+                    parameterNames: ['Input Number'],
                     return: ['result']
                 }]
             },
@@ -150,6 +164,7 @@ var problems = {
                 description: 'Returning the absolute value of the given value.',
                 functions: [{
                     parameter: ['number'],
+                    parameterNames: ['Input Number'],
                     return: ['result']
                 }]
             },
@@ -158,6 +173,7 @@ var problems = {
                 description: 'Returning the sum of the given values.',
                 functions: [{
                     parameter: ['number', 'number'],
+                    parameterNames: ['Input Number 1', 'Input Number 2'],
                     return: ['number']
                 }]
             },
@@ -166,6 +182,7 @@ var problems = {
                 description: 'Returning the given value with the sign reversed.',
                 functions: [{
                     parameter: ['number'],
+                    parameterNames: ['Input Number'],
                     return: ['number']
                 }]
             },
@@ -174,6 +191,7 @@ var problems = {
                 description: 'Returning the arithmetic difference of the given values.',
                 functions: [{
                     parameter: ['number', 'number'],
+                    parameterNames: ['Input Number 1', 'Input Number 2'],
                     return: ['number']
                 }]
             },
@@ -182,6 +200,7 @@ var problems = {
                 description: 'Returning the arithmetic product of the given values.',
                 functions: [{
                     parameter: ['number', 'number'],
+                    parameterNames: ['Input Number 1', 'Input Number 2'],
                     return: ['number']
                 }]
             },
@@ -190,6 +209,7 @@ var problems = {
                 description: 'Returning the largest value of the input.',
                 functions: [{
                     parameter: ['number', 'number'],
+                    parameterNames: ['Input Number 1', 'Input Number 2'],
                     return: ['number']
                 }]
             },
@@ -198,6 +218,7 @@ var problems = {
                 description: 'Returning the smallest value of the input.',
                 functions: [{
                     parameter: ['number', 'number'],
+                    parameterNames: ['Input Number', 'Input Number'],
                     return: ['number']
                 }]
             },
@@ -206,6 +227,7 @@ var problems = {
                 description: 'Returning the arithmetic quotient of the given values.',
                 functions: [{
                     parameter: ['number', 'number'],
+                    parameterNames: ['Input Number 1', 'Input Number 2'],
                     return: ['number']
                 }]
             },
@@ -221,6 +243,7 @@ var problems = {
                 description: 'Returning the number with no fractional part that is closest to the argument. If there are two such numbers, then the one that is closest to positive infinity is returned.',
                 functions: [{
                     parameter: ['number'],
+                    parameterNames: ['Input Number'],
                     return: ['number']
                 }]
             },
@@ -229,6 +252,7 @@ var problems = {
                 description: 'Returning the smallest (closest to negative infinity) number with no fractional part that is not less than the value of arg.',
                 functions: [{
                     parameter: ['number'],
+                    parameterNames: ['Input Number'],
                     return: ['number']
                 }]
             }
@@ -241,6 +265,7 @@ var problems = {
                 description: 'Doing an if-statement.',
                 functions: [{
                     parameter: ['eval', 'true', 'false'],
+                    parameterNames: ['Evaluation Function', 'Value if True', 'Value if False'],
                     return: ['result']
                 }]
             }
@@ -253,6 +278,7 @@ var problems = {
                 description: 'Evaluating a statement',
                 functions: [{
                     parameter: ['string'],
+                    parameterNames: ['Statement String'],
                     return: ['result']
                 }]
             },
@@ -261,6 +287,7 @@ var problems = {
                 description: 'Returning the first bound argument.',
                 functions: [{
                     parameter: ['list'],
+                    parameterNames: ['Input List'],
                     return: ['result']
                 }]
             }
@@ -273,6 +300,7 @@ var problems = {
                 description: 'Checking whether a given property is a (transitive) sub-property of another property.',
                 functions: [{
                     parameter: ['property', 'property'],
+                    parameterNames: ['Sub-Property', 'Parent Property'],
                     return: ['bool']
                 }]
             },
@@ -281,6 +309,7 @@ var problems = {
                 description: 'Getting the number of values of a given property (?arg2) at a given subject (?arg1). The result is the number of matches of (?arg1, ?arg2, ?object).',
                 functions: [{
                     parameter: ['resource', 'property'],
+                    parameterNames: ['Subject', 'Predicate'],
                     return: ['integer']
                 }]
             },
@@ -289,6 +318,7 @@ var problems = {
                 description: 'Getting the number of values of a given property (?arg1) at a given object (?arg2). The result is the number of matches of (?subject, ?arg1, ?arg2).',
                 functions: [{
                     parameter: ['property', 'resource'],
+                    parameterNames: ['Predicate', 'Object'],
                     return: ['integer']
                 }]
             },
@@ -297,6 +327,7 @@ var problems = {
                 description: 'Getting the object of a given subject (?arg1) / predicate (?arg2) combination. Note that if multiple values are present then the result might be unpredictably random.',
                 functions: [{
                     parameter: ['resource', 'property'],
+                    parameterNames: ['Subject', 'Predicate'],
                     return: ['resource']
                 }]
             },
@@ -305,6 +336,7 @@ var problems = {
                 description: 'Gets the object of a given subject (?arg1) / predicate (?arg2) combination in a given graph ?arg3. Note that if multiple values are present then the result might be unpredictably random.',
                 functions: [{
                     parameter: ['resource', 'property', 'graph'],
+                    parameterNames: ['Subject', 'Predicate', 'Graph'],
                     return: ['resource']
                 }]
             },
@@ -313,6 +345,7 @@ var problems = {
                 description: 'Getting the object of a given subject (?arg1) / predicate (?arg2) combination, also taking the sub-properties of ?arg2 into account. Note that if multiple values are present then the result might be unpredictably random.',
                 functions: [{
                     parameter: ['resource', 'property'],
+                    parameterNames: ['Subject', 'Predicate'],
                     return: ['resource']
                 }]
             },
@@ -321,6 +354,7 @@ var problems = {
                 description: 'Constructing a literal with lexical form and type as specified by the arguments.',
                 functions: [{
                     parameter: ['string', 'iri'],
+                    parameterNames: ['Input String', 'Data Type IRI'],
                     return: ['literal']
                 }]
             },
@@ -329,6 +363,7 @@ var problems = {
                 description: 'Constructing a blank node that is distinct from all blank nodes in the dataset being queried and distinct from all blank nodes created by calls to this constructor for other query solutions. If the no argument form is used, every call results in a distinct blank node. If the form with a simple literal is used, every call results in distinct blank nodes for different simple literals, and the same blank node for calls with the same simple literal within expressions for one solution mapping.',
                 functions: [{
                     parameter: ['literal'],
+                    parameterNames: ['Literal to Derive Blank Node from'],
                     return: ['resource']
                 }]
             },
@@ -337,6 +372,7 @@ var problems = {
                 description: 'Creating a IRI resource (node) from a given IRI string',
                 functions: [{
                     parameter: ['string'],
+                    parameterNames: ['IRI String'],
                     return: ['resource']
                 }]
             },
@@ -345,6 +381,7 @@ var problems = {
                 description: 'Returning the datatype IRI of argument ?arg1; returns xsd:string if the parameter is a simple literal.',
                 functions: [{
                     parameter: ['string'],
+                    parameterNames: ['Input String'],
                     return: ['class']
                 }]
             },
@@ -353,6 +390,7 @@ var problems = {
                 description: 'Checks whether a given class (?arg1) is a (transitive) sub-class of another class (?arg2).',
                 functions: [{
                     parameter: ['class', 'class'],
+                    parameterNames: ['Sub Class', 'Parent Class'],
                     return: ['bool']
                 }]
             },
@@ -361,6 +399,7 @@ var problems = {
                 description: 'Gets the \'first\' subject of a given predicate (?arg1)/object (?arg2) combination. Note that if multiple values are present then the result might be unpredictably random.',
                 functions: [{
                     parameter: ['property', 'resource'],
+                    parameterNames: ['Predicate', 'Object'],
                     return: ['resource']
                 }]
             }
@@ -373,6 +412,7 @@ var problems = {
                 description: 'Returning true if ?arg1 < ?arg2.',
                 functions: [{
                     parameter: ['input', 'input'],
+                    parameterNames: ['Input 1', 'Input 2'],
                     return: ['bool']
                 }]
             },
@@ -381,6 +421,7 @@ var problems = {
                 description: 'Returning the boolean negation of the argument.',
                 functions: [{
                     parameter: ['input'],
+                    parameterNames: ['Input'],
                     return: ['bool']
                 }]
             },
@@ -389,6 +430,7 @@ var problems = {
                 description: 'Returning true if ?arg1 != ?arg2.',
                 functions: [{
                     parameter: ['input', 'input'],
+                    parameterNames: ['Input 1', 'Input 2'],
                     return: ['bool']
                 }]
             },
@@ -397,6 +439,7 @@ var problems = {
                 description: 'Returning true if ?arg1 <= ?arg2.',
                 functions: [{
                     parameter: ['input', 'input'],
+                    parameterNames: ['Input 1', 'Input 2'],
                     return: ['bool']
                 }]
             },
@@ -405,6 +448,7 @@ var problems = {
                 description: 'Returning true if ?arg1 >= ?arg2.',
                 functions: [{
                     parameter: ['input', 'input'],
+                    parameterNames: ['Input 1', 'Input 2'],
                     return: ['bool']
                 }]
             },
@@ -413,6 +457,7 @@ var problems = {
                 description: 'Checking whether a node is a URI.',
                 functions: [{
                     parameter: ['input'],
+                    parameterNames: ['Input 1'],
                     return: ['bool']
                 }]
             },
@@ -421,6 +466,7 @@ var problems = {
                 description: 'Returning true if ?arg1 == ?arg2.',
                 functions: [{
                     parameter: ['input', 'input'],
+                    parameterNames: ['Input 1', 'Input 2'],
                     return: ['bool']
                 }]
             },
@@ -429,6 +475,7 @@ var problems = {
                 description: 'Returning the logical AND between two (boolean) operands.',
                 functions: [{
                     parameter: ['input', 'input'],
+                    parameterNames: ['Input 1', 'Input 2'],
                     return: ['bool']
                 }]
             },
@@ -437,6 +484,7 @@ var problems = {
                 description: 'Returning the logical OR between two (boolean) operands.',
                 functions: [{
                     parameter: ['input', 'input'],
+                    parameterNames: ['Input 1', 'Input 2'],
                     return: ['bool']
                 }]
             }
@@ -449,6 +497,7 @@ var problems = {
                 description: 'encoding for a URI',
                 functions: [{
                     parameter: ['string'],
+                    parameterNames: ['Input String'],
                     return: ['string']
                 }]
             },
@@ -457,6 +506,7 @@ var problems = {
                 description: 'Whether a string contains another string',
                 functions: [{
                     parameter: ['string', 'string'],
+                    parameterNames: ['Haystack String', 'Needle String'],
                     return: ['bool']
                 }]
             },
@@ -465,6 +515,7 @@ var problems = {
                 description: 'Whether a string ends another string',
                 functions: [{
                     parameter: ['string', 'string'],
+                    parameterNames: ['Haystack String', 'Needle String'],
                     return: ['bool']
                 }]
             },
@@ -473,6 +524,7 @@ var problems = {
                 description: 'Converting a string to upper case characters.',
                 functions: [{
                     parameter: ['string'],
+                    parameterNames: ['Input String'],
                     return: ['string']
                 }]
             },
@@ -481,6 +533,7 @@ var problems = {
                 description: 'Converting a string to lower case characters.',
                 functions: [{
                     parameter: ['string'],
+                    parameterNames: ['Input String'],
                     return: ['string']
                 }]
             },
@@ -489,6 +542,7 @@ var problems = {
                 description: 'Whether a string starts another string',
                 functions: [{
                     parameter: ['string', 'string'],
+                    parameterNames: ['Haystack String', 'Needle String'],
                     return: ['bool']
                 }]
             },
@@ -497,6 +551,7 @@ var problems = {
                 description: 'Getting the sub-string of a given string',
                 functions: [{
                     parameter: ['string', 'integer', 'integer'],
+                    parameterNames: ['Input String', 'Starting Index', 'Length'],
                     return: ['string']
                 }]
             },
@@ -505,6 +560,7 @@ var problems = {
                 description: 'Computing the length of a given input string.',
                 functions: [{
                     parameter: ['string'],
+                    parameterNames: ['Input String'],
                     return: ['integer']
                 }]
             },
@@ -513,6 +569,7 @@ var problems = {
                 description: 'Returning a literal of the same kind (simple literal, plain literal same language tag, xsd:string) as the first argument arg1. The lexical form of the result is the substring of the value of arg1 that proceeds in arg1 the first occurrence of the lexical form of arg2; otherwise the lexical form of the result is the empty string. If the lexical form of arg2 is the empty string, the lexical form of the result is the emprty string.',
                 functions: [{
                     parameter: ['string', 'string'],
+                    parameterNames: ['HayStack String', 'Needle String'],
                     return: ['string']
                 }]
             },
@@ -521,6 +578,7 @@ var problems = {
                 description: 'Replacing each non-overlapping occurrence of a regular expression pattern with a replacement string. Regular expession matching may involve modifier flags.',
                 functions: [{
                     parameter: ['string', 'string', 'string', 'string'],
+                    parameterNames: ['Input String', 'Search String', 'Replacement String', 'Flags'],
                     return: ['string']
                 }]
             },
@@ -529,6 +587,7 @@ var problems = {
                 description: 'Returning a literal of the same kind (simple literal, plain literal same language tag, xsd:string) as the first argument arg1. The lexical form of the result is the substring of the value of arg1 that precedes in arg1 the first occurrence of the lexical form of arg2; otherwise the lexical form of the result is the empty string. If the lexical form of arg2 is the empty string, the lexical form of the result is the emprty string.',
                 functions: [{
                     parameter: ['string', 'string'],
+                    parameterNames: ['HayStack String', 'Needle String'],
                     return: ['string']
                 }]
             },
@@ -537,6 +596,7 @@ var problems = {
                 description: 'Creating a single string by concatenating all arguments from left to right. Note that if any one of the arguments is unbound (null) then the whole result string will be unbound.',
                 functions: [{
                     parameter: ['string', 'string'],
+                    parameterNames: ['Input String 1', 'Input String 2'],
                     return: ['string']
                 }]
             },
@@ -545,6 +605,7 @@ var problems = {
                 description: 'Returning true if a string (?arg1) matches the regular expression supplied as a pattern (?arg2) as influenced by the value of flags (?arg3), otherwise returns false.',
                 functions: [{
                     parameter: ['string', 'string', 'string'],
+                    parameterNames: ['Input String', 'Regular Expression String', 'Flags'],
                     return: ['bool']
                 }]
             }
@@ -615,7 +676,7 @@ var problemTemplate = '' +
     '  fno:name "The <label> problem"^^xsd:string ;\n' +
     '  dcterms:description "<description>"^^xsd:string .\n';
 
-var parameterTemplate = '[ a fno:Parameter; fno:predicate <predicate>]';
+var parameterTemplate = '[ a fno:Parameter; fno:predicate <predicate> <label>]';
 
 var outputTemplate = ' ;\n' +
     '  fno:output [\n' +
@@ -679,7 +740,14 @@ function createFunction(functionObj, problemId, problemLabel) {
 
     if (functionObj.parameter) {
         for (var i = 0; i < functionObj.parameter.length; i++) {
-            parameters.push(parameterTemplate.replace('<predicate>', ':pred_' + functionObj.parameter[i]));
+            var param = parameterTemplate.replace('<predicate>', ':pred_' + functionObj.parameter[i]);
+            if (functionObj.parameterNames) {
+                param = param.replace('<label>', '; rdfs:label "' + functionObj.parameterNames[i] + '"^^xsd:string ');
+            }
+            else {
+                param = param.replace('<label>', '');
+            }
+            parameters.push(param);
             argn++;
         }
     }
